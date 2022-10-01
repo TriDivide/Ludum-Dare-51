@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour {
     private float horizontalInput;
 
     private bool isGrounded;
+
+    [HideInInspector] public bool isFacingRight = true;
+
+
+
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
 
@@ -20,8 +25,17 @@ public class PlayerMovement : MonoBehaviour {
 
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);    
 
-        if (Input.GetKey(KeyCode.Space) && isGrounded) {
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isGrounded) {
             Jump();
+        }
+
+        if (horizontalInput > 0f) {
+            isFacingRight = true;
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if (horizontalInput < 0f) {
+            isFacingRight = false;
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
     }
 

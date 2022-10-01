@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
      private Rigidbody2D body;
-    [SerializeField] private float speed = 20.0f;
+    [SerializeField] private float speed = 0f;
     [SerializeField] private float jumpSpeed = 10.0f;
 
     private float horizontalInput;
@@ -16,8 +16,12 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
+        speed = ModifierManager.Instance.playerMovementSpeed;
 
+    }
 
+    private void FixedUpdate() {
+        speed = ModifierManager.Instance.playerMovementSpeed;
     }
 
     private void Update() {
@@ -50,6 +54,8 @@ public class PlayerMovement : MonoBehaviour {
             isGrounded = true;
         }
     }
+
+
 
 
     public bool CanAttack() {

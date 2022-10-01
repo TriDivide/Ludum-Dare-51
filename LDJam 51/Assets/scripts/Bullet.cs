@@ -3,7 +3,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
     [SerializeField] private float bulletSpeed = 15f;
-    [SerializeField] private float bulletDamage = 10f;
 
     [SerializeField] private Rigidbody2D rb;
 

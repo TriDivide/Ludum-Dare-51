@@ -776,10 +776,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2574701750003248294, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
-      propertyPath: m_GravityScale
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2574701750003248295, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
       propertyPath: m_Name
       value: player
@@ -826,14 +822,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2574701750003248314, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2574701750508619337, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2574701750508619337, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

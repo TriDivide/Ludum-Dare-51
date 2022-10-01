@@ -16,8 +16,10 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
-        speed = ModifierManager.Instance.playerMovementSpeed;
+    }
 
+    private void Start() {
+        speed = ModifierManager.Instance.playerMovementSpeed;
     }
 
     private void FixedUpdate() {

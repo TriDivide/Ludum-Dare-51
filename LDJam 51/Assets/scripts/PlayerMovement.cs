@@ -37,11 +37,11 @@ public class PlayerMovement : MonoBehaviour {
 
         if (horizontalInput > 0f) {
             isFacingRight = true;
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(0.8f, 0.8f, 1f);
         }
         else if (horizontalInput < 0f) {
             isFacingRight = false;
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(-0.8f, 0.8f, 1f);
         }
     }
 

@@ -15,6 +15,9 @@ public class ModifierManager : MonoBehaviour {
     public float playerGravityScale { get; private set; } = 5f;
     private float defaultPlayerGravityScale = 5f;
 
+    public float hostileGravityScale { get; private set; } = 1f;
+    private float defaultHostileGravityScale = 1f;
+
 
     public bool hasModifierSet { get; private set; } = false;
 
@@ -72,9 +75,23 @@ public class ModifierManager : MonoBehaviour {
 
     private void ResetPlayerGravity() {
         print("Player gravity has been reset");
-        print(defaultPlayerGravityScale);
         playerGravityScale = defaultPlayerGravityScale;
-        print(playerGravityScale);
+        hasModifierSet = false;
+    }
+
+    public void ReverseHostileGravity() {
+        if (!hasModifierSet) {
+            print("reversed hostile gravity");
+            hasModifierSet = true;
+            hostileGravityScale = -1;
+            Invoke("ResetHostileGravity", 10f);
+        }
+
+    }
+
+    private void ResetHostileGravity() {
+        print("hostile gravity has been reset");
+        hostileGravityScale = defaultHostileGravityScale;
         hasModifierSet = false;
     }
 }

@@ -10,7 +10,7 @@ public class HostileController : MonoBehaviour {
             health -= ModifierManager.Instance.bulletDamage;
             print(health);
             if (health <= 0) {
-                print("desteroy");
+                ScoreModel.Instance.AddToScore(1);
                 Destroy(gameObject);
             }
 

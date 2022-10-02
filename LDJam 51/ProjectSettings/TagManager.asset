@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Bullet
   - Hostile
+  - Door
   layers:
   - Default
   - TransparentFX

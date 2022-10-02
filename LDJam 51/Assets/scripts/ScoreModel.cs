@@ -8,7 +8,7 @@ public class ScoreModel : MonoBehaviour {
 
 
     public ScoreModel() {
-        score = 0;
+        Reset();
     }
 
     public void AddToScore(int updatedScore) {
@@ -17,6 +17,6 @@ public class ScoreModel : MonoBehaviour {
     }
 
     public void Reset() {
-        score = 0;
+        score = 3;
     }
 }

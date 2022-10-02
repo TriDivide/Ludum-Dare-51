@@ -4,7 +4,7 @@ public class ModifierController : MonoBehaviour {
 
     private bool playerOnPad = false;
 
-    private enum Modifier { speed, increasedPlayerDamage, }
+    private enum Modifier { speed, increasedPlayerDamage, reversePlayerGravity }
 
     private Modifier currentModifier;
 
@@ -14,26 +14,26 @@ public class ModifierController : MonoBehaviour {
     }
 
     private void UpdateCurrentModifier() {
-        currentModifier = (Modifier)Random.Range(0, 2);
-        print(currentModifier);
+        currentModifier = (Modifier)Random.Range(0, 3);
     }
 
     private void Update() {
         if (playerOnPad && Input.GetKeyDown(KeyCode.P)) {
             print(currentModifier);
-            print("trying to change");
-            switch(currentModifier) {
-                case Modifier.speed:
-                    ModifierManager.Instance.DoublePlayerSpeed();
-                    print("upgrade");
-                    break;
-                case Modifier.increasedPlayerDamage:
-                    ModifierManager.Instance.DoubleBulletDamage();
-                    print("upgrade");
-                    break;
-            }
-
-        }        
+            ModifierManager.Instance.ReversePlayerGravity();
+            /*  switch(currentModifier) {
+                  case Modifier.speed:
+                      ModifierManager.Instance.DoublePlayerSpeed();
+                      break;
+                  case Modifier.increasedPlayerDamage:
+                      ModifierManager.Instance.DoubleBulletDamage();
+                      break;
+                  case Modifier.reversePlayerGravity:
+                      ModifierManager.Instance.ReversePlayerGravity();
+                      break;
+              }
+              */
+        }
     }
 
 

@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void Update() {
+
+        body.gravityScale = ModifierManager.Instance.playerGravityScale;
+
         horizontalInput = Input.GetAxis("Horizontal");
 
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);    
@@ -46,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void Jump() {
-        body.velocity = new Vector2(body.velocity.x, jumpSpeed);
+        body.velocity = new Vector2(body.velocity.x, ModifierManager.Instance.playerGravityScale > 0 ? jumpSpeed : -jumpSpeed);
         isGrounded = false;
     }
 

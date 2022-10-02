@@ -6,11 +6,14 @@ public class ModifierManager : MonoBehaviour {
 
     public static ModifierManager Instance { get; private set; }
 
-    public float playerMovementSpeed = 10f;
+    public float playerMovementSpeed { get; private set; } = 10f;
     [SerializeField] private float defaultPlayerMovementSpeed = 10f;
 
-    public float bulletDamage = 10f;
+    public float bulletDamage { get; private set; } = 10f;
     [SerializeField] private float defaultBulletDamage = 10f;
+
+    public float playerGravityScale { get; private set; } = 5f;
+    private float defaultPlayerGravityScale = 5f;
 
 
     public bool hasModifierSet { get; private set; } = false;
@@ -54,6 +57,25 @@ public class ModifierManager : MonoBehaviour {
         hasModifierSet = false;
         print("resetting the bullet damage");
         bulletDamage = defaultBulletDamage;
+    }
+
+
+    public void ReversePlayerGravity() {
+        if (!hasModifierSet) {
+            print("reversed gravity");
+            hasModifierSet = true;
+            playerGravityScale = -5;
+            Invoke("ResetPlayerGravity", 10f);
+        }
+        
+    }
+
+    private void ResetPlayerGravity() {
+        print("Player gravity has been reset");
+        print(defaultPlayerGravityScale);
+        playerGravityScale = defaultPlayerGravityScale;
+        print(playerGravityScale);
+        hasModifierSet = false;
     }
 }
 

@@ -5,6 +5,8 @@ public class InteractionController : MonoBehaviour {
     private bool enteredDoorRange = false;
     private GameObject currentInteractable;
 
+    [SerializeField] private AudioSource unlockSound;
+
     private void Update() {
         if (Input.GetKeyDown(KeyCode.P) && enteredDoorRange && currentInteractable != null) {
             print("trying to open door");
@@ -14,6 +16,7 @@ public class InteractionController : MonoBehaviour {
                 ScoreModel.Instance.AddToScore(-5);
                 currentInteractable = null;
                 enteredDoorRange = false;
+                unlockSound.Play();
             }
             else {
                 print("not got the funds. Get rid of more hostiles.");

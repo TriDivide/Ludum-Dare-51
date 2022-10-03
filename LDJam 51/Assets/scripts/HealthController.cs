@@ -13,6 +13,8 @@ public class HealthController : MonoBehaviour {
 
     [SerializeField] private Text playerHealthText;
 
+    [SerializeField] private AudioSource playerPainSound;
+
     public void FixedUpdate() {
         UpdateHealth();
     }
@@ -34,12 +36,14 @@ public class HealthController : MonoBehaviour {
 
     public void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.gameObject.tag == "Hostile") {
+            playerPainSound.Play();
             underAttack = true;
         }
     }
 
     public void OnCollisionExit2D(Collision2D collision) {
         if (collision.collider.gameObject.tag == "Hostile") {
+            playerPainSound.Stop();
             underAttack = false;
         }
     }

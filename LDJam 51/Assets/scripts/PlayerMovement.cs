@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 
     [HideInInspector] public bool isFacingRight = true;
 
+    [SerializeField] private AudioSource jumpSound;
 
 
     private void Awake() {
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void Jump() {
+        jumpSound.Play();
         body.velocity = new Vector2(body.velocity.x, ModifierManager.Instance.playerGravityScale > 0 ? jumpSpeed : -jumpSpeed);
         isGrounded = false;
     }

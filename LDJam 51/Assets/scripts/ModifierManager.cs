@@ -10,6 +10,7 @@ public class ModifierManager : MonoBehaviour {
 
     public Modifier? modifierInEffect { get; private set; }
 
+    [SerializeField] private AudioSource modifierSound;
     public float playerMovementSpeed { get; private set; } = 10f;
     [SerializeField] private float defaultPlayerMovementSpeed = 10f;
 
@@ -30,7 +31,14 @@ public class ModifierManager : MonoBehaviour {
 
 
     public void SetModifierInEffect(Modifier? modifier) {
+        
         modifierInEffect = modifier;
+        if (modifier == null) {
+            modifierSound.Stop();
+        }
+        else {
+            modifierSound.Play();
+        }
     }
     private void Awake() {
         // If there is an instance, and it's not me, delete myself.

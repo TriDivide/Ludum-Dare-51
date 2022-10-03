@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour {
     [SerializeField] private Transform firingPoint;
     [SerializeField] private GameObject bulletPrefab;
 
+    [SerializeField] private AudioSource shoot;
 
     private float timeUntilFire;
     private PlayerMovement pm;
@@ -23,6 +24,7 @@ public class PlayerShoot : MonoBehaviour {
     }
 
     private void Shoot() {
+        shoot.Play();
         float angle = pm.isFacingRight ? 0f : 180f;
         Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }

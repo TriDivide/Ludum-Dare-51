@@ -11,7 +11,7 @@ public class SpawnController : MonoBehaviour {
 
 
     private void Start() {
-        InvokeRepeating("Spawn", spawnRate, spawnRate);
+        InvokeRepeating("Spawn", 0f, spawnRate);
     }
 
     private void FixedUpdate() {

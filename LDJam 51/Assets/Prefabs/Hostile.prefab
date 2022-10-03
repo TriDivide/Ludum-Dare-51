@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 4803222193805286016}
   - component: {fileID: 3260738700496713610}
   - component: {fileID: 7362316453477273765}
-  - component: {fileID: 3178767722427760570}
   - component: {fileID: 5415044853197975440}
   - component: {fileID: 7060148638534797721}
   - component: {fileID: 6331276877527559316}
+  - component: {fileID: 312942509}
   m_Layer: 0
   m_Name: Hostile
   m_TagString: Hostile
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5415044853197975447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 6518480556894045166}
   m_Father: {fileID: 0}
@@ -103,22 +103,6 @@ MonoBehaviour:
   health: 20
   pain: {fileID: 7060148638534797721}
   death: {fileID: 6331276877527559316}
---- !u!58 &3178767722427760570
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5415044853197975447}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.32247496
 --- !u!114 &5415044853197975440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 400
   nextWaypointDistance: 3
+  graphics: {fileID: 6518480556894045166}
 --- !u!82 &7060148638534797721
 AudioSource:
   m_ObjectHideFlags: 0
@@ -325,6 +310,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &312942509
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5415044853197975447}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015048366, y: 0.015587211}
+  m_Size: {x: 0.31189528, y: 0.6775367}
+  m_Direction: 0
 --- !u!1 &6302185145086467026
 GameObject:
   m_ObjectHideFlags: 0

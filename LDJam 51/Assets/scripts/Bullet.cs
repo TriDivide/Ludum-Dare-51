@@ -19,6 +19,13 @@ public class Bullet : MonoBehaviour {
     private void FixedUpdate() {
         rb.velocity = transform.right * bulletSpeed;
 
+        if (rb.velocity.x >= 0.01f) {
+            transform.localScale = new Vector2(-2f, 0.8f);
+        }
+        else if (rb.velocity.x <= 0.01f) {
+            transform.localScale = new Vector2(2f, 0.8f);
+
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {

@@ -23,7 +23,6 @@ public class HealthController : MonoBehaviour {
         playerHealthText.text = "Health: " + playerHealth.ToString("0");
         if (playerHealth > 0) {
             if (underAttack) {
-                print(playerHealth);
                 playerHealth -= 0.8;
             }
         }

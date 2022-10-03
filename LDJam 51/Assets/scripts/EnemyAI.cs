@@ -16,6 +16,9 @@ public class EnemyAI : MonoBehaviour {
 
     private Transform target;
 
+    public Transform graphics;
+
+
     private void Start() {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         seeker = GetComponent<Seeker>();
@@ -60,6 +63,15 @@ public class EnemyAI : MonoBehaviour {
 
         if (distance < nextWaypointDistance) {
             currentWaypoint++;
+        }
+
+
+        if (rb.velocity.x <= 0.01f) {
+            graphics.localScale = new Vector2(-0.8f, 0.8f);
+        }
+        else if (rb.velocity.x >= 0.01f) {
+            graphics.localScale = new Vector2(0.8f, 0.8f);
+
         }
     }
 }

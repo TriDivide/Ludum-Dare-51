@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour {
 
@@ -27,7 +28,7 @@ public class HealthController : MonoBehaviour {
         else {
             print("player died.");
             playerHealth = 0;
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
 

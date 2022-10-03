@@ -16,7 +16,7 @@ public class HostileController : MonoBehaviour {
         if (collision.gameObject.tag == "Bullet") {
             health -= ModifierManager.Instance.bulletDamage;
             if (health <= 0) {
-                ScoreModel.Instance.AddToScore(1);
+                ScoreModel.Instance.AddToScore(ModifierManager.Instance.scoreValue);
                 Destroy(gameObject);
             }
 

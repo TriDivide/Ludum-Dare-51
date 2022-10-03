@@ -4,7 +4,6 @@ public class ModifierController : MonoBehaviour {
 
     private bool playerOnPad = false;
 
-    private enum Modifier { speed, increasedPlayerDamage, reversePlayerGravity, reverseHostileGravity }
 
     private Modifier currentModifier;
 
@@ -33,6 +32,9 @@ public class ModifierController : MonoBehaviour {
                 case Modifier.reverseHostileGravity:
                     ModifierManager.Instance.ReverseHostileGravity();
                     break;
+                case Modifier.doubleScore:
+                    ModifierManager.Instance.DoubleScoreValue();
+                    break;
             }
               
         }
@@ -51,3 +53,4 @@ public class ModifierController : MonoBehaviour {
         }
     }
 }
+

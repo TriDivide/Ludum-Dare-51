@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour {
 
@@ -9,8 +10,14 @@ public class HealthController : MonoBehaviour {
 
     public bool underAttack = false;
 
+    [SerializeField] private Text playerHealthText;
 
     public void FixedUpdate() {
+        UpdateHealth();
+    }
+
+    private void UpdateHealth() {
+        playerHealthText.text = "Health: " + playerHealth.ToString("0");
         if (playerHealth > 0) {
             if (underAttack) {
                 print(playerHealth);
@@ -25,13 +32,13 @@ public class HealthController : MonoBehaviour {
     }
 
     public void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.collider.GetType() == typeof(BoxCollider2D) && collision.collider.gameObject.tag == "Hostile") {
+        if (collision.collider.gameObject.tag == "Hostile") {
             underAttack = true;
         }
     }
 
     public void OnCollisionExit2D(Collision2D collision) {
-        if (collision.collider.GetType() == typeof(BoxCollider2D) && collision.collider.gameObject.tag == "Hostile") {
+        if (collision.collider.gameObject.tag == "Hostile") {
             underAttack = false;
         }
     }

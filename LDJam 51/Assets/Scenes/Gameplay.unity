@@ -1735,7 +1735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAAIezqoC9+gwIAAD4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWRbQy4t9YhpIckTGknF1+EvcYaZMmjjwDJ8N8ryTZ26Inl7dfbtyt/IspVA7kWciNp8SwKQN8nyNno22RwPsGZHATf0Q/oY95ooSsXRHzMb6KpsHjg0pSoQUua/+AH5oKxBQ2npZD1ujhAKpRWFi4JU2BdUmiXzS30OUFn+zNNXMrFWuHSWR/WSvDkas0cuAY5hOIZTuZJkkRBl4FnUbJaBgGOF13mchbOQxwG6yle+RqG54zUDRRuoKFUtJot+iqBtSOMcRD4DG6n7oLxLFw6HoIxqjrWSF8ar0pKGmXszDagoMSq4Km6ohXQQ6XdROPk17JUoDuJJLk8UGnFbKuin6JVuCbq2LJ8J8y4PnEQelpt0ef//NOWdSlF/dT3DbDroSuaH3+TS06UHq1gDD98JW74ibAj2TN4q4C/iI0UhhfWqaVxqUZB+DD8vY2WVpAfB7ylegeaZrTIfn/d1twMVz/9OWW03nvp5y2wY8Lr7c8EpF3OL0vYH5HqSljUsfir4A85jK+tczxSqbR1dVNyR28vjHShaO01c9MYnQrJwcMd6QY4YfqytWX0/QrvfKO2d55H4t5V17zz9c/lLsXDQzzGd66tON2WpSpxegZVvRrNKIeBtHO8WJ1SwXl7YWNN+rSdkSXJR2kHQ4uvp4UWMQlJRPI9wcE8JvE0WSzmOI72YRmvyCIKkL89yu2chG1bop08dmt8KM7tnfWfm8lGksZfeyHJaUM/ajGSnPJS7HIJwF/bCjfiIG0T+zCLdUGtQDvQmnK/b/SZISbyIxTZrVDmJ12ftSTZUCVDDX0X2iEZSv33JUMOvt3yVsI7hZNr3he7ous/UEsDBBQAAAgIAAAAIewJF1VTbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSmWmiUaJxYnJSooGhiWmiqa6lmZmJgalxklGaqUWimbGhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIezqoC9+gwIAAD4FAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIewJF1VTbQAAAHgAAAAJACQAAAAAAAAAAAAAANACAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAiAMAAAAA
+    dataString: UEsDBBQAAAgIAAAAIezdaUIThgIAAEEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMFymzAQ/RWPzrVHYOOQ3lriOD0k8dTt5MJFhsVoLCRGErGdjP+9KwGGuL5YvN19evt24ZNwaWrIrNJrzfNnlQP5PiHuTL5NhuATnNheyS3/gD7njee2dEnM5/xmlivEA1dmVAVW8+yH3AuXTBFsJC+Urlb5HhJlrEG4YMIAhrSyrloi9DkhJ/yb3ruSM57CO3f6wNM9nVzwmIG0oEepdEZpRGlAl3FXQ2fhIr4LaBAEXe00nC3jMKTzcLma0tgTNTITrKohd10NfPN4FnU8QTyLKf6CwBdI7LzLpTPHnCkhuOmEE3uuvTEJq02DbWNCzhka4dW6/BL4vrSuqXHxa1EYsJ1Lmp0fuEY/W1byU7UmV8wcWo3vTDTunigIvaqW9Pm/+LQVXWhVPfX3BtTdYUueHX6zc8aMHU1hDD98Fd7IIxMHthPwVoJ8UWutGplj0OrGlTYGwofh8dpaUkJ2GPBW6g3Y1IP3/dD7kbseLr77UyJ4tfPOL1pgK5T3228KaJzNLxTs98h0FIg6FX8N/GH78cJ1gUeujcVQ16V08naq0S6VrLxnrpvGJkpL8HAnugbJhD1vkMbejvAmNrr2JvLI3KvVXd7F+jfmpsTDQz6lN6GNOl6HZUp1fAZTvjZWcAmDaBd4QZ8SJWW7YWNP+rJtowuWjcr2Dc+/rhZZRixkc5btGA0WEYum98vlgkbzXVhEMVvOA+J3j0vsk4lNK7SzB6cmB3KJe9Z/cSZrzWq/7blmxzX/qNTIci4Ltc00gHxtGa7CQeMl+F7mq5yjQVuwlks/b/KZEqGyA+TplSj1na5OVrN0YElJzd+VdUhKEv+JSYmDr7u80fDO4egu78ku5PIPUEsDBBQAAAgIAAAAIewJF1VTbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSmWmiUaJxYnJSooGhiWmiqa6lmZmJgalxklGaqUWimbGhUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIezdaUIThgIAAEEFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIewJF1VTbQAAAHgAAAAJACQAAAAAAAAAAAAAANMCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAiwMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -2010,10 +2010,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 2574701750003248312, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 2574701750738042571}
     - target: {fileID: 2574701750003248314, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2064,107 +2060,6 @@ PrefabInstance:
       objectReference: {fileID: 2061509010}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
---- !u!1 &2574701750738042570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2574701750003248295, guid: 6324a4c141e6e7f4a824fbe8dcd87479, type: 3}
-  m_PrefabInstance: {fileID: 2574701750738042569}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2574701750738042571
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2574701750738042570}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f28d551165b89f4680d0afb46668b16, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &3292863966509346403
 PrefabInstance:
   m_ObjectHideFlags: 0
